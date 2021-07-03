@@ -43,11 +43,15 @@ body {
 }
 
 .task--create-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     background-color: #333;
     color: #fff;
-    padding: 15px 5px;
+    padding: 15px 0px 15px 0px;
     display: flex;
-    place-content: space-around;
+    place-content: space-evenly;
 }
 
 .task--input {
@@ -72,4 +76,12 @@ body {
 
 .task--send:hover {
     cursor: pointer;
+}
+
+.input--error {
+    border: 1px solid rgb(209, 44, 44);
+}
+.input--error::placeholder {
+    color: rgb(209, 44, 44);
+
 }
